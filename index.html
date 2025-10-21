@@ -68,7 +68,7 @@
                             <tr>
                                 <th class="px-4 py-2 text-left font-semibold text-gray-600">S.No.</th>
                                 <th class="px-4 py-2 text-left font-semibold text-gray-600">Name</th>
-                                <th class="px-4 py-2 text-left font-semibold text-gray-600">CAP</th>
+                                <th class="px-4 py-2 text-left font-semibold text-gray-600">REG</th>
                                 <th class="px-4 py-2 text-left font-semibold text-gray-600">Dept</th>
                             </tr>
                         </thead>
@@ -221,7 +221,7 @@
                         row.innerHTML = `
                             <td class="px-4 py-3 whitespace-nowrap">${index + 1}</td>
                             <td class="px-4 py-3 whitespace-nowrap">${student.Name || 'N/A'}</td>
-                            <td class="px-4 py-3 whitespace-nowrap">${student.CAP || 'N/A'}</td>
+                            <td class="px-4 py-3 whitespace-nowrap">${student.REG || 'N/A'}</td>
                             <td class="px-4 py-3 whitespace-nowrap">${student.Dept || 'N/A'}</td>`;
                         studentListBody.appendChild(row);
                     });
@@ -263,7 +263,7 @@
                 const dataToExport = currentDisplayedStudents.map((student, index) => ({
                     'S.No.': index + 1,
                     'Name': student.Name,
-                    'CAP': student.CAP,
+                    'REG': student.REG,
                     'Dept': student.Dept
                 }));
 
